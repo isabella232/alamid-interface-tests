@@ -1,0 +1,26 @@
+{
+  "name": "alamid-interface-tests",
+  "version": "0.1.0",
+  "description": "Provides test-cases for common interfaces used in alamid-modules",
+  "main": "./lib/index.js",
+  "keywords": [
+    "alamid",
+    "interface",
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "1.x",
+    "chai": "1.x",
+    "sinon-chai": "2.x"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerigon/alamid-interface-tests.git"
+  },
+  "author": "peerigon <developers@peerigon.com>",
+  "license": "MIT"
+}
