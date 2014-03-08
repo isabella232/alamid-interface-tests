@@ -1,9 +1,7 @@
 "use strict";
 
-var index = require("../lib/index.js");
+var tests = require("../lib/index.js");
 
 describe("test use()-interface", function () {
-    index.use({
-        use: require("../example/use.js")
-    });
+    tests.run("use", require("../example/use.js"));
 });

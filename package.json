@@ -18,12 +18,26 @@
     "mocha-loader": "0.x"
   },
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha -R spec",
+    "test": "node node_modules/mocha/bin/mocha test/main.js -R spec",
     "test-browser": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js mocha\\!./test/main.js -d"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/peerigon/alamid-interface-tests.git"
+  },
+  "testling": {
+    "harness" : "mocha",
+    "files": "test/main.js",
+    "browsers": [
+      "ie/8..latest",
+      "chrome/27..latest",
+      "firefox/22..latest",
+      "safari/latest",
+      "opera/latest",
+      "iphone/latest",
+      "ipad/latest",
+      "android-browser/latest"
+    ]
   },
   "author": "peerigon <developers@peerigon.com>",
   "license": "Unlicense"

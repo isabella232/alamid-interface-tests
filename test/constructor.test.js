@@ -1,7 +1,7 @@
 "use strict";
 
-var index = require("../lib/index.js");
+var tests = require("../lib/index.js");
 
 describe("test constructor()-interface", function () {
-    index.constructor(require("../example/constructor.js"));
+    tests.run("constructor", require("../example/constructor.js"));
 });

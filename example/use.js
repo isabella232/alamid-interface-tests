@@ -20,4 +20,4 @@ function use(plugin, config) { /*jshint validthis: true */
 }
 use.plugins = [];
 
-module.exports = use;
+exports.use = use;
