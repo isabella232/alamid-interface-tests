@@ -9,7 +9,7 @@
  * @param {Object=} config
  * @returns {Object} this
  */
-function use(plugin, config) { /*jshint validthis: true */
+function use(plugin, config) { /* jshint validthis: true */
 
     if (use.plugins.indexOf(plugin) === -1) {
         plugin(this, config);
