@@ -23,10 +23,10 @@ You can run the tests for the specific interface by calling
 ```javascript
 var tests = require("alamid-interface-tests");
 
-tests.run(interface, targetToTest);
+tests.run(interfaceName, targetToTest);
 ```
 
-while `interface` is one of the following strings:
+while `interfaceName` is one of the following strings:
 
 - [**use**](https://github.com/peerigon/alamid-interface-tests/blob/master/example/use.js)
 - [**constructor**](https://github.com/peerigon/alamid-interface-tests/blob/master/example/constructor.js)
